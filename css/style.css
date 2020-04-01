@@ -17,8 +17,12 @@ ul {
     margin: 7px 20px 5px 130px;
     letter-spacing: -1px;
 }
+.hdr a,
+.subnav a {
+    color: #000;
+}
 .logo img {
-    width: 60px;
+    width: 61px;
 }
 .topnav {
     display: flex;
@@ -36,6 +40,10 @@ ul {
     margin-left: 35px;
     font-size: 20px;
     font-weight: 900;
+}
+.topnav ul:last-child li a {
+    color: #666666;
+
 }
 .topnav ul:last-child li:first-child {
     margin-left: 0;
@@ -59,6 +67,7 @@ nav ul {
     background-size: cover;
     height: 250px;
     position: relative;
+    margin-bottom: 25px;
 }
 .bg-img span {
     margin: 27px 0 0 395px;
@@ -73,4 +82,35 @@ nav ul {
 }
 .bg-img span:last-child {
     font-size: 28px;
+}
+.content-u {
+    width: 800px;
+    margin: 0 auto;
+}
+.chart {
+    width: 800px;
+}
+.sns-icon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 28px;
+    /* align-items: center; */
+}
+.sns-icon li {
+    padding-left: 22px;
+}
+.fa-facebook-square {
+    color:#3C5A99;
+}
+.fa-twitter-square {
+    color: #1CA1F2;
+}
+.fa-linkedin {
+    color: #0073B2;
+}
+
+.sns-icon img{
+    width: 38px;
+    margin-bottom: 5px;
+
 }
