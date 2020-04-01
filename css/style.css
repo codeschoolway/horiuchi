@@ -11,7 +11,6 @@ ul {
 }
 .hdr {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
     flex-direction: row;
     margin: 7px 20px 5px 130px;
@@ -48,9 +47,6 @@ ul {
 .topnav ul:last-child li:first-child {
     margin-left: 0;
 }
-/* .topnav ul:last-child li:first-of-type {
-    margin-left: 0;
-} */
 
 nav ul {
     display: flex;
@@ -78,7 +74,6 @@ nav ul {
 .bg-img span:first-child {
     font-size: 19px;
     font-weight: normal;
-    /* line-height: 3px; */
 }
 .bg-img span:last-child {
     font-size: 28px;
@@ -96,7 +91,6 @@ nav ul {
     justify-content: flex-end;
     font-size: 28px;
     margin-bottom: 38px;
-    /* align-items: center; */
 }
 .sns-icon li {
     padding-left: 22px;
@@ -145,10 +139,13 @@ nav ul {
     padding: 15px 10px;
     text-align: center;
     width: 310px;
-    /* height: 100px; */
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    margin: 0 auto 90px;
+    transition: background-color .5s;
+}
+.btn:hover {
+    background-color: rgba(0, 92, 172, 0.673);
 }
 
 p.btn,
@@ -156,20 +153,54 @@ p.btn a{
     color: #fff;
     line-height: 1.4;
 }
-p.btn a {
-    margin-right: 5px;
-}
 .btn::before {
     content: '>';
-    /* display: block; */
-    /* vertical-align: middle; */
 }
-/* .btn::after {
-    display: inline;
-} */
 .fa-file-pdf {
     color: #D94641;
     margin-left: 8px;
-    /* display: inline-block; */
-   /*  display: flex; */
 }
+.randl {
+    display: flex;
+    justify-content: space-between;
+}
+.randl li:nth-child(1)::before{
+    content: '<';
+    margin-right: 5px;
+}
+.randl li:nth-child(2)::after {
+    content: '>';
+    margin-left: 5px;
+}
+.sec-first-one {
+    background: #562bf26d;
+    padding: 16px 16px;
+}
+.sec-first-one ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.sec-first-one li {
+    box-sizing: border-box;
+    width: 30%;
+    text-align: center;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.sec-first-one a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: 15px;
+    padding: 18px;
+}
+.sec-first-one a::before {
+    content: ">";
+    position: absolute;
+    top: 18px;
+    left: 7px;    
+}
+
+
