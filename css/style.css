@@ -89,15 +89,21 @@ nav ul {
 }
 .chart {
     width: 800px;
+    margin-bottom: 30px;
 }
 .sns-icon {
     display: flex;
     justify-content: flex-end;
     font-size: 28px;
+    margin-bottom: 38px;
     /* align-items: center; */
 }
 .sns-icon li {
     padding-left: 22px;
+}
+.sns-icon img{
+    width: 38px;
+    margin-bottom: 5px;
 }
 .fa-facebook-square {
     color:#3C5A99;
@@ -108,9 +114,62 @@ nav ul {
 .fa-linkedin {
     color: #0073B2;
 }
+.sec-first h3 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.sec-first h3::before {
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/heading.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.sec-first p {
+    color: #5c5c5c;
+    line-height: 1.9;
+}
+.sec-first p:nth-of-type(1) {
+    margin-bottom: 15px;
+}
+.sec-first p:nth-of-type(2) {
+    margin-bottom: 30px;
+}
+.btn {
+    background: #005BAC;
+    padding: 15px 10px;
+    text-align: center;
+    width: 310px;
+    /* height: 100px; */
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
 
-.sns-icon img{
-    width: 38px;
-    margin-bottom: 5px;
-
+p.btn,
+p.btn a{
+    color: #fff;
+    line-height: 1.4;
+}
+p.btn a {
+    margin-right: 5px;
+}
+.btn::before {
+    content: '>';
+    /* display: block; */
+    /* vertical-align: middle; */
+}
+/* .btn::after {
+    display: inline;
+} */
+.fa-file-pdf {
+    color: #D94641;
+    margin-left: 8px;
+    /* display: inline-block; */
+   /*  display: flex; */
 }
