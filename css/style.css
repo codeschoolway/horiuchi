@@ -21,8 +21,9 @@ ul {
     letter-spacing: -1px;
 }
 .hdr a,
+.subnav,
 .subnav a {
-    color: #000;
+    color: #999;
 }
 .logo img {
     width: 61px;
@@ -94,7 +95,6 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     font-size: 28px;
-    margin-bottom: 38px;
 }
 .sns-icon li {
     padding-left: 22px;
@@ -102,6 +102,9 @@ nav ul {
 .sns-icon img{
     width: 38px;
     margin-bottom: 5px;
+}
+.sns-icon-top {
+    margin-bottom: 38px;
 }
 .fa-facebook-square {
     color:#3C5A99;
@@ -112,13 +115,16 @@ nav ul {
 .fa-linkedin {
     color: #0073B2;
 }
-.sec-first h3 {
+.sec-first {
+    margin-bottom: 115px;
+}
+.sec-first-one h3 {
     display: flex;
     align-items: center;
     font-size: 22px;
     margin-bottom: 30px;
 }
-.sec-first h3::before {
+.sec-first-one h3::before {
     content: '';
     display: inline-block;
     width: 25px;
@@ -128,14 +134,14 @@ nav ul {
     vertical-align: middle;
     margin-right: 5px;
 }
-.sec-first p {
+.sec-first-one p {
     color: #5c5c5c;
     line-height: 1.9;
 }
-.sec-first p:nth-of-type(1) {
+.sec-first-one p:nth-of-type(1) {
     margin-bottom: 15px;
 }
-.sec-first p:nth-of-type(2) {
+.sec-first-one p:nth-of-type(2) {
     margin-bottom: 30px;
 }
 .btn {
@@ -156,9 +162,6 @@ p.btn a{
     color: #fff;
     line-height: 1.4;
 }
-.btn::before {
-    content: '>';
-}
 .fa-file-pdf {
     color: #D94641;
     margin-left: 8px;
@@ -176,22 +179,23 @@ p.btn a{
     content: '>';
     margin-left: 5px;
 }
-.sec-first-one {
+.sec-first-two {
     background-color: #DEECF8;
     padding: 16px 16px;
+    margin-bottom: 50px;
 }
-.sec-first-one a:hover{
+.sec-first-two a:hover{
     text-decoration: none;
 }
-.sec-first-one h4 {
+.sec-first-two h4 {
     margin: 0 0 10px 13px;
 }
-.sec-first-one ul {
+.sec-first-two ul {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.sec-first-one li {
+.sec-first-two li {
     box-sizing: border-box;
     width: 30%;
     text-align: center;
@@ -200,10 +204,10 @@ p.btn a{
     background-color: #fff;
     transition: background-color .5s;
 }
-.sec-first-one li:hover {
+.sec-first-two li:hover {
     background-color: rgba(204, 204, 204, 0.619);
 }
-.sec-first-one a {
+.sec-first-two a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,14 +215,17 @@ p.btn a{
     font-size: 15px;
     padding: 18px;
 }
-.sec-first-one a::before {
+.sec-first-two a::before {
     content: ">";
     position: absolute;
     top: 18px;
     left: 7px;    
 }
+.fa-chevron-right::before {
+    font-size: 10px;
+}
 .sec-second {
-    margin: 0 auto;
+    margin: 0 auto 90px;
     width: 1000px;
 }
 .sec-second h3 {
@@ -247,33 +254,21 @@ p.btn a{
     display: block;
     width: 100%;
 }
-.sec-second ul li::before {
-    content: ">";
-    font-size: 10px;
-    padding-right: 10px;
-}
-.sec-second p::before {
-    content: "<";
-    font-size: 10px;
-    padding-right: 10px;
-}
 .sec-second section {
     margin-bottom: 27px;
 }
 .sec-second section:last-of-type {
     margin-bottom: 60px;
 }
-.sec-second p {
-    margin-bottom: 80px;
-}
 .sec-third {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin-bottom: 50px;
     border-top: solid 2px #999;
     border-bottom: solid 2px #999;
-    padding: 22px 745px;
+    padding: 22px 0;
+
 }
 .sec-third h4 {
     font-size: 20px;
@@ -286,4 +281,67 @@ p.btn a{
     padding-left: 40px;
 }
 
+.sec-fourth {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: solid 1px #CCC;
+    padding: 0 115px 60px;
+    margin-bottom: 60px;
+}
+.sec-fourth section{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+}
+.sec-fourth h4 a {
+    margin-bottom: 20px;
+    color: #333;
+    display: block;
+}
+.sec-fourth li {
+    margin-bottom: 15px;
+}
+.sec-fourth li a {
+    color: #3A3A3A;
+    display: block;
+    font-size: 14px;
+}
+.sec-fourth ul li:last-of-type{
+    margin-bottom: 0;
+}
+.sec-fourth section:nth-of-type(1),
+.sec-fourth section:nth-of-type(2),
+.sec-fourth section:nth-of-type(3),
+.sec-fourth section:nth-of-type(4) {
+    margin-bottom: 80px;
+}
+footer {
+    margin: 0 423px 120px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+footer li::after {
+    content: "|";
+    font-size: 14px;
+    color: #999;
+    margin: 0 15px;
+}
+footer ul li:last-child::after{
+    content: "";
+    margin: 0;
+}
+footer a {
+    color: #999;
+}
+footer address {    
+    text-align: left;
+    font-style: normal;
+    font-size: 10px;
+    color: #333;    
+}
 
