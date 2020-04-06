@@ -13,51 +13,17 @@ a:hover {
 ul {
     list-style-type: none;
 }
-
-
-
-
-
-.hdr
-{
-    position: fixed;            /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 100%;                /* 横幅100%　*/
-    /* height: 140px;          *//* 縦幅140px */
-    z-index: 1;
-    background-color:#fff; 
-}
- 
- 
-div#header-bk { 
-    background-color:#fff;     /* 背景色(黒) */
-	/* padding:10px 0 20px; */       /* 上10px、下20pxをあける */
-    /* height:110px; *//* 縦の高さ110px */
-	width:100%;                /* 横の幅を100% */
-}
- 
- 
-div#header { 
-	/* border: 5px solid #fff;     *//* 表示領域を白枠で囲う */
-	height: 100%;              /* 縦の表示領域はheader-bkと同じ */
-	/* width: 960px;               *//* 横の幅970px */
-    /* margin: auto;   */            /* 中央揃え */
+.header-fix-inner {
+	height: 100%;
     display: flex;
     justify-content: space-between;
 }
-
-
-
-
-
-
-
 .hdr {
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-direction: row; */
-    /* margin: 7px 20px 5px 130px; */
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    background-color:#fff;
     padding: 7px 20px 5px 130px;
     letter-spacing: -1px;
 }
@@ -107,7 +73,6 @@ nav ul {
 .subnav {
     display: flex;
     font-size: 12px;
-    /* margin:0 0 25px 255px; */
     margin: 59px 0 25px 255px;
 }
 .subnav li a{
@@ -118,11 +83,9 @@ nav ul {
 }
 .bg-img {
     background-image: url(../images/h1_whats_2.jpg);
-    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 250px;
-    position: relative;
     margin-bottom: 25px;
 }
 .bg-img span {
@@ -181,12 +144,10 @@ nav ul {
 }
 .sec-first-one h3::before {
     content: '';
-    display: inline-block;
     width: 25px;
     height: 25px;
     background-image: url(../images/heading.png);
     background-size: contain;
-    vertical-align: middle;
     margin-right: 5px;
 }
 .sec-first-one p {
@@ -207,10 +168,13 @@ nav ul {
     display: flex;
     align-items: center;
     margin: 0 auto 90px;
-    transition: background-color .5s;
+    transition: background-color .3s;
 }
 .btn:hover {
-    background-color: #005cacac;
+    background-color: rgba(0, 92, 172, 0.755);
+}
+.btn:hover a {
+    text-decoration: none;
 }
 p.btn,
 p.btn a{
@@ -226,14 +190,6 @@ p.btn a{
     justify-content: space-between;
     margin-bottom: 40px;
 }
-/* .randl li:nth-child(1)::before{
-    content: '<';
-    margin-right: 5px;
-} */
-/* .randl li:nth-child(2)::after {
-    content: '>';
-    margin-left: 5px;
-} */
 .randl li:nth-child(1)::before {    
     content:"\f053";
     font-family: "Font Awesome 5 Free";
@@ -277,10 +233,10 @@ p.btn a{
     border: 1px solid #b1b1b1;
     margin-bottom: 20px;
     background-color: #fff;
-    transition: background-color .5s;
+    transition: background-color .3s;
 }
 .sec-first-two li:hover {
-    background-color: rgba(204, 204, 204, 0.619);
+    background-color: #ebebeb;
 }
 .sec-first-two a {
     display: flex;
@@ -290,12 +246,6 @@ p.btn a{
     font-size: 15px;
     height: 70px;
 }
-/* .sec-first-two a::before {
-    content: ">";
-    position: absolute;
-    top: 18px;
-    left: 7px;    
-} */
 .sec-first-two a::before {    
     content:"\f054";
     font-family: "Font Awesome 5 Free";
@@ -329,8 +279,6 @@ p.btn a{
     padding-bottom: 10px;
 }
 .sec-second li {
-    display: flex;
-    align-items: center;
     width: 250px;
     margin-bottom: 20px;
 }
@@ -339,11 +287,6 @@ p.btn a{
     width: 100%;
     padding-left: 15px;
 }
-
-
-
-
-
 .sec-second li::before,
 .sec-fourth li::before,
 .sec-fourth h4::before {
@@ -353,26 +296,13 @@ p.btn a{
     font-weight: 600;
     padding-right: 5px;
     color: #8c8c8c;
-    /* left: 7px; */
 }
-
-
-
-
-
-
-
-
-
-
 .sec-second section {
     margin-bottom: 27px;
 }
 .sec-second section:last-of-type {
     margin-bottom: 60px;
 }
-
-
 .sec-second p::before{    
     content:"\f053";
     font-family: "Font Awesome 5 Free";
@@ -380,11 +310,7 @@ p.btn a{
     font-weight: 600;
     padding-right: 5px;
     color: #8c8c8c;
-    /* position: absolute; */
-    /* left: 7px; */
 }
-
-
 .sec-third {
     display: flex;
     justify-content: center;
@@ -393,7 +319,6 @@ p.btn a{
     border-top: solid 2px #999;
     border-bottom: solid 2px #999;
     padding: 22px 0;
-
 }
 .sec-third h4 {
     font-size: 20px;
@@ -405,7 +330,6 @@ p.btn a{
 .sec-third li {
     padding-left: 40px;
 }
-
 .sec-fourth {
     display: flex;
     flex-wrap: wrap;
@@ -415,8 +339,6 @@ p.btn a{
     margin-bottom: 60px;
 }
 .sec-fourth section{
-    display: flex;
-    flex-direction: column;
     width: 320px;
 }
 .sec-fourth h4 a {
@@ -424,13 +346,6 @@ p.btn a{
     color: #333;
     display: block;
 }
-
-
-
-
-
-
-/* --------------------------------- */
 .sec-second li,
 .sec-fourth li,
 .sec-fourth h4 {
@@ -442,9 +357,6 @@ p.btn a{
     position: absolute;
     top: 7px;
 }
-
-
-
 .sec-fourth li {
     margin-bottom: 15px;
 }
@@ -463,12 +375,18 @@ p.btn a{
 .sec-fourth section:nth-of-type(4) {
     margin-bottom: 80px;
 }
+ul.libld li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
 footer {
     margin: 0 423px 120px;
 }
 footer ul{
     display: flex;
-    justify-content: center;
     font-size: 12px;
     margin-bottom: 20px;
 }
@@ -491,4 +409,3 @@ footer address {
     font-size: 10px;
     color: #333;    
 }
-
