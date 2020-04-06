@@ -13,17 +13,62 @@ a:hover {
 ul {
     list-style-type: none;
 }
-.hdr {
+
+
+
+
+
+.hdr
+{
+    position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 100%;                /* 横幅100%　*/
+    /* height: 140px;          *//* 縦幅140px */
+    z-index: 1;
+    background-color:#fff; 
+}
+ 
+ 
+div#header-bk { 
+    background-color:#fff;     /* 背景色(黒) */
+	/* padding:10px 0 20px; */       /* 上10px、下20pxをあける */
+    /* height:110px; *//* 縦の高さ110px */
+	width:100%;                /* 横の幅を100% */
+}
+ 
+ 
+div#header { 
+	/* border: 5px solid #fff;     *//* 表示領域を白枠で囲う */
+	height: 100%;              /* 縦の表示領域はheader-bkと同じ */
+	/* width: 960px;               *//* 横の幅970px */
+    /* margin: auto;   */            /* 中央揃え */
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
-    margin: 7px 20px 5px 130px;
+}
+
+
+
+
+
+
+
+.hdr {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* flex-direction: row; */
+    /* margin: 7px 20px 5px 130px; */
+    padding: 7px 20px 5px 130px;
     letter-spacing: -1px;
 }
 .hdr a,
 .subnav,
 .subnav a {
     color: #999;
+}
+.hdr a:hover,
+.subnav a:hover {
+    text-decoration: none;
 }
 .logo img {
     width: 61px;
@@ -52,6 +97,9 @@ ul {
 .topnav ul:last-child li:first-child {
     margin-left: 0;
 }
+.topnav a {
+    color: #000;
+}
 
 nav ul {
     display: flex;
@@ -59,7 +107,14 @@ nav ul {
 .subnav {
     display: flex;
     font-size: 12px;
-    margin:0 0 25px 260px;
+    /* margin:0 0 25px 255px; */
+    margin: 59px 0 25px 255px;
+}
+.subnav li a{
+    padding: 0 5px;
+}
+.subnav li:last-child {
+    margin-left: 5px;
 }
 .bg-img {
     background-image: url(../images/h1_whats_2.jpg);
@@ -171,28 +226,48 @@ p.btn a{
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.randl li:nth-child(1)::before{
+/* .randl li:nth-child(1)::before{
     content: '<';
     margin-right: 5px;
-}
-.randl li:nth-child(2)::after {
+} */
+/* .randl li:nth-child(2)::after {
     content: '>';
     margin-left: 5px;
+} */
+.randl li:nth-child(1)::before {    
+    content:"\f053";
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    padding: 2px 5px 0 0;
+    color: #8c8c8c;
+}
+.randl li:nth-child(2)::after {    
+    content:"\f054";
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    padding: 2px 0 0 5px;
+    color: #8c8c8c;
+}
+.randl li {
+    display: flex;
+    align-items: center;
 }
 .sec-first-two {
     background-color: #DEECF8;
-    padding: 16px 16px;
+    padding: 16px 0px;
     margin-bottom: 50px;
 }
 .sec-first-two a:hover{
     text-decoration: none;
 }
 .sec-first-two h4 {
-    margin: 0 0 10px 13px;
+    margin: 0 0 15px 20px;
 }
 .sec-first-two ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 .sec-first-two li {
@@ -213,13 +288,22 @@ p.btn a{
     align-items: center;
     position: relative;
     font-size: 15px;
-    padding: 18px;
+    height: 70px;
 }
-.sec-first-two a::before {
+/* .sec-first-two a::before {
     content: ">";
     position: absolute;
     top: 18px;
     left: 7px;    
+} */
+.sec-first-two a::before {    
+    content:"\f054";
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 900;
+    position: absolute;
+    left: 7px;
+    color: #8c8c8c;
 }
 .fa-chevron-right::before {
     font-size: 10px;
@@ -253,13 +337,54 @@ p.btn a{
 .sec-second ul a {
     display: block;
     width: 100%;
+    padding-left: 15px;
 }
+
+
+
+
+
+.sec-second li::before,
+.sec-fourth li::before,
+.sec-fourth h4::before {
+    content:"\f054";
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 600;
+    padding-right: 5px;
+    color: #8c8c8c;
+    /* left: 7px; */
+}
+
+
+
+
+
+
+
+
+
+
 .sec-second section {
     margin-bottom: 27px;
 }
 .sec-second section:last-of-type {
     margin-bottom: 60px;
 }
+
+
+.sec-second p::before{    
+    content:"\f053";
+    font-family: "Font Awesome 5 Free";
+    font-size: 10px;
+    font-weight: 600;
+    padding-right: 5px;
+    color: #8c8c8c;
+    /* position: absolute; */
+    /* left: 7px; */
+}
+
+
 .sec-third {
     display: flex;
     justify-content: center;
@@ -295,10 +420,31 @@ p.btn a{
     width: 320px;
 }
 .sec-fourth h4 a {
-    margin-bottom: 20px;
+    margin: 0 0 20px 10px;
     color: #333;
     display: block;
 }
+
+
+
+
+
+
+/* --------------------------------- */
+.sec-second li,
+.sec-fourth li,
+.sec-fourth h4 {
+    position: relative;
+}
+.sec-second li::before,
+.sec-fourth li::before,
+.sec-fourth h4::before {
+    position: absolute;
+    top: 7px;
+}
+
+
+
 .sec-fourth li {
     margin-bottom: 15px;
 }
@@ -306,6 +452,7 @@ p.btn a{
     color: #3A3A3A;
     display: block;
     font-size: 14px;
+    padding-left: 15px;
 }
 .sec-fourth ul li:last-of-type{
     margin-bottom: 0;
