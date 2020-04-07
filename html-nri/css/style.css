@@ -379,11 +379,10 @@ ul.libld li a {
     font-size: 16px;
     font-weight: bold;
 }
-
-
-
 footer {
-    margin: 0 423px 120px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 120px;
 }
 footer ul{
     display: flex;
