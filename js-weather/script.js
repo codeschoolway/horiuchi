@@ -37,22 +37,22 @@ function weatherNow(url, appid) {
         <h1>${city}の天気</h1>
 
         <ul class="date">
-        <li>${myMonth}月${myDate}日（${myWeek}）</li>
-        <li>${myHours}時${myMin}分</li>
+            <li>${myMonth}月${myDate}日（${myWeek}）</li>
+            <li>${myHours}時${myMin}分</li>
         </ul>
 
         <div class="fore-outer">
-        <h2><img src="${imagePath}"></h2>
-        <ul class="fore">
-        <li class="desc">${desc}</li>
-        <li class="temp">${temp} ℃</li>
-        </ul>
+            <h2><img src="${imagePath}"></h2>
+            <ul class="fore">
+                <li class="desc">${desc}</li>
+                 <li class="temp">${temp} ℃</li>
+            </ul>
         </div>
     
         <ul>
-        <li>最高気温：${tempMax} ℃</li>
-        <li>最低気温：${tempMin} ℃</li>
-        <li>風速：${windspeed}m/秒</li>
+            <li>最高気温：${tempMax} ℃</li>
+            <li>最低気温：${tempMin} ℃</li>
+            <li>風速：${windspeed}m/秒</li>
         </ul>`;
 
         $(`#weather`).html(currentWeather);
