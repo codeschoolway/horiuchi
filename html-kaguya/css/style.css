@@ -4,9 +4,7 @@ html {
     font-size: 100%
 }
 body {
-    /* font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif; */
     background-color: #FCFCFC;
-    /* font-family: 'Noto Sans JP', sans-serif; */
 }
 a {
     text-decoration: none;
@@ -19,27 +17,9 @@ a {
     align-items: flex-end;
     padding: 8px 96px;
 }
-/* main {
-    width: 1280px;
-    margin: 0 auto;
-} */
-header h1 {
-    /* line-height: 0; */
- /*    
-    text-align: center;
-    font-size: 16px;
-    line-height: 1.1; */
-}
-/* header h1 a{
-    color: #918F89;
-} */
-/* .page-header span {
-    display: block;
-} */
 .nav-main {
     display: flex;
     list-style: none;
-    /* line-height: 22px; */
 }
 .nav-main li {
     margin-left: 56px;
@@ -48,16 +28,6 @@ header h1 {
     font-size: 16px;
     color: #B2B2B2;
 }
-/* .nav-main a:hover {
-    color: #3E3E3E;
-    border-bottom: 2px solid #3E3E3E;
-    opacity: 1;
-} */
-/* .current-about a{
-    border-bottom: 2px solid #3E3E3E;
-    opacity: 1;
-} */
-
 .nav-main li:nth-of-type(1) a{
     color: #3B3B3B;
 }
@@ -65,32 +35,21 @@ header h1 {
     width: 1280px;
     margin:0 auto;
 }
-/* header {
-    margin: 0 130px;
-} */
-/* #home {
-    background-image: url(../images/AdobeStock_199226712@2x.png);
-    height: 700px;
-    min-height: 986px;
-    margin-bottom: 80px;
-} */
 .big-text{
     position: absolute;
     font-weight: normal;
     font-size: 49px;
     font-family: 'Noto Sans', sans-serif;
     color: #918F89;
-    top: 354px;
+    top: 336px;
     padding: 32px 32px 32px 88px;
     background-color: #ffff;
     letter-spacing: 2.65px;
     line-height: 1;
     opacity: 0.8;
-    /* width: 489px; */
 }
 .big-bg {background-image: url(../images/AdobeStock_199226712@2x.png);
     height: 700px;
-    /* min-height: 986px; */
     margin-bottom: 80px;
     background-size: cover;
     background-position: center top;
@@ -99,14 +58,13 @@ header h1 {
 h3 {
     text-align: center;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 24px;
     line-height: 1;
     letter-spacing: 2.5px;
     color: #3B3B3B;
 }
 .main-msg-flex{
     display: flex;
-    /* justify-content: center; */
     margin-bottom: 240px;
     padding-left: 88px;
 }
@@ -133,126 +91,145 @@ h3 {
     justify-content: space-between;
     margin: 0 96px 40px;
     list-style-type: none;
-    /* width: 80%; */
 }
 .item {
     position: relative;
-    /* width: 30%; */
 }
 .item-img {
     filter: brightness(50%);
     display: block;
 }
-/* .item-img {
-    display: block;
-    width: 100%;
-} */
-/* .overlay {
-    position: absolute;
-    bottom: 0;
-    background-color: #00000095;
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
-}
-.item:hover .overlay {
-    height: 100%;
-} */
 .item-text {
     color: #fff;
     font-size: 15px;
-    /* font-family: "Noto Sans"; */
     position: absolute;
     top: 50%;
     left: 50%;
-    /* -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */
     transform: translate(-50%, -50%);
     text-align: center;
     width: 100%;
     text-shadow: 0px 0px 6px #000000E0;
 }
 .section-item {
-    margin-bottom: 220px;
+    margin-bottom: 240px;
 }
 .view-more {
     text-align: center;
-    font-size: 21px;
+    font-size: 18px;
     font-family: "Noto Sans JP";
     letter-spacing: 1.05px;
     color: #3B3B3B;
 }
+.fa-chevron-right{
+    color: #3B3B3B;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.section-title {
+    margin-bottom: 48px;
+}
+.section-catalog {
+    margin: 0 auto;
+}
+.cat-desc {
+    font-size: 15px;
+    color: #3B3B3B;
+    text-align: center;
+    letter-spacing: 0.45px;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+.button-download {
+    text-align: center;
+    font-size: 18px;
+    background: #D1D1D1;
+    padding: 19px 64px;
+    width: 364px;
+    margin: 0 auto;
+    border-radius: 40px;
+    letter-spacing: 1.8px;
+    margin-bottom: 240px;
+}
+.button-download a {
+    color: #707070;
+}
 .section-form {
-    margin-bottom:190px;
+    margin-bottom:240px;
 }
 .form-contact {
-    width: 463px;
+    width: 454px;
     text-align: center;
+    margin: 0 auto;
+    background: #fff;
 }
 input[type="text"],
 input[type="email"],
 textarea {
-    border: 0.5px solid #707070;
-    border-radius: 11px;
+    border: 1px solid #707070;
+    border-radius: 16px;
     height: 35px;    
     padding: 10px;
     width: 463px;
     margin-bottom: 30px;
+    font-size: 12px;
+    color: #3B3B3B;
+    opacity: 0.6;
 }
 textarea {
     height: 156px;
 }
 .button-pc {
-    background-color: #707070;
-    font-size: 15px;
-    font-family: "Noto Sans";
+    background-color: #D1D1D1;
+    font-size: 14px;
+    font-family: 'Noto Sans';
     letter-spacing: 0.75px;
-    color: #FFFFFF;
+    color: #707070;
     border-radius: 25px;
-    padding: 10px 25px;
+    padding: 9px 58px;
     line-height: 1;
 }
 .button-pc:hover {
     background: #707070d8;
 }
-h3.section-title {
-    margin-bottom: 50px;
+.section-form h3{
+    margin-bottom: 47px;
+}
+.section-recruit {
+    margin-bottom: 320px;
+}
+.catalog-desc {
+    font-size: 15px;
+    color: #3B3B3B;
+    text-align: center;
+    margin-bottom: 39px;
+    line-height: 2;
 }
 footer {
     background: #918F89;
-    padding: 150px 0 35px;
-}
-footer a,
-footer .nav-main a,
-footer .nav-main a:hover,
-footer p {
-    color: #ffffff;
-}
-.foot-logo {
+    padding: 120px 0 24px;
     text-align: center;
-    font-size: 16px;
-    line-height: 1.1;
-    padding: 0;
+}
+footer,
+footer .nav-main a{
+    color: #ffffff;
+    font-size: 18px;
 }
 .page-footer {
     display: flex;
     justify-content: space-between;
-    padding: 16px 0;
-    margin: 0 320px;
-    padding-bottom: 93px;
+    margin: 0 224px 41px;
     align-items: center;
 }
-footer .nav-main {
-    margin-top: 0;
+.page-footer ul li:nth-of-type(1) a{
+    color: #fff;
 }
-footer .nav-main a{
-    opacity: 1;
+.page-footer ul li {
+    margin-left: 32px;
 }
-footer p {
-    text-align: center;
-    font-size: 10px;
+small {
+    font-size: 11px;
 }
+
 .sp {
     display: none;
 }
