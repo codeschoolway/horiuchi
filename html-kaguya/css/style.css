@@ -48,7 +48,7 @@ a {
     line-height: 1;
     opacity: 0.8;
 }
-.big-bg {background-image: url(../images/AdobeStock_199226712@2x.png);
+.big-bg {background-image: url(../images/home_top@2x.png);
     height: 700px;
     margin-bottom: 80px;
     background-size: cover;
@@ -230,22 +230,11 @@ small {
     font-size: 11px;
 }
 
-.sp {
-    display: none;
-}
-.pc {
-    display: block;
-}
 
 /* ************************************************************************************ */
 
 @media (max-width: 600px) {
-    .sp {
-        display: block;
-    }
-    .pc {
-        display: none;
-    }
+
     .wrapper {
         /* padding: 0 4%; */
         width: unset;
