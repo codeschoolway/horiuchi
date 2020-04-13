@@ -8,8 +8,11 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="css/ress.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/mobile.css" rel="stylesheet"> -->
     <link href="css/news.css" rel="stylesheet">
 </head>
+
+<!-- コンテンツを全画面にしない場合は wrapper（class="page-header、class="big-bg、class="section-item）を消す -->
 <body>
     <header class="page-header wrapper">
         <h1>
@@ -18,7 +21,7 @@
         <nav>
             <ul class="nav-main">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="news.html">NEWS</a></li>
+                <li class="current-page"><a href="news.html">NEWS</a></li>
                 <li><a href="recruit.html">RECURUIT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
@@ -30,33 +33,36 @@
             <h2 class="big-text">NEWS</h2>
         </div>
 
-        <section class="section-item wrapper">
+
+
+
+        <section class="section-item wrapper-news">
             <h3 class="section-title">入荷情報</h3>
             <ul class="items-flex">
                 <li class="item">
-                    <img class="item-img" src="images/AdobeStock_59829158_Preview.png" alt="アームストロングのカウチ">
+                    <img class="item-img" src="images/news01.png" alt="アームストロングのカウチ">
                     <p class="item-text">アームストロングのカウチ入荷</p>
                 </li>
                 <li class="item">
-                    <img class="item-img" src="images/AdobeStock_74141361.png" alt="アームストロングのチェア">                
+                    <img class="item-img" src="images/news02.png" alt="アームストロングのチェア">                
                     <p class="item-text">アームストロングのチェア再入荷</p>
                 </li>
                 <li class="item">
-                    <img class="item-img" src="images/AdobeStock_221963447.png" alt="アームストロングのテーブル">
+                    <img class="item-img" src="images/news03.png" alt="アームストロングのテーブル">
                     <p class="item-text">アームストロングのテーブル入荷</p>
                 </li>
             </ul>
         </section>
     </main>
 
-    <footer>
+    <footer class="wrapper">
         <div class="page-footer">
             <p class="foot-logo"><a href="#"><img src="images/logo_footer.png" alt="logo_footer"></a></p>
             <ul class="nav-main">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="recruit.html">Recruit</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </div>
         <small>&copy; HTMLCSS.code</small>

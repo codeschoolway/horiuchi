@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.nav-main li:nth-of-type(n) a{
+    color: #B2B2B2;
+}
+.big-text {
+    top: 192px;
+    left: 228px;
+    padding: 0;
+    font-size: 30px;
+    background-color: unset;
+}
+.big-bg {
+    height: 456px;
+    margin-bottom: 161px;
+    position: relative;
+}
