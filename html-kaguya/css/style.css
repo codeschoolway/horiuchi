@@ -360,6 +360,7 @@ small {
         background-image: url("../images/logo_footer.png");
         background-size: contain;
         vertical-align: middle;
+        background-repeat: no-repeat;
       }
     nav {
         width: 0;
