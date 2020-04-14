@@ -56,7 +56,7 @@ main {
     margin-bottom: 80px;
     background-size: cover;
     background-position: center top;
-    background-position: no-repeat;
+    /* background-position: no-repeat; */
 }
 h3 {
     text-align: center;
@@ -239,25 +239,135 @@ small {
 
 @media (max-width: 600px) {
 
+    
     .wrapper {
-        /* padding: 0 4%; */
         width: unset;
-        margin:unset;
     }
+
+    .page-header {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 1;
+        background-color: #fff;        
+        flex-direction: column;
+        background-color: #918F89;
+        align-items: center;
+        padding: 15px;
+    }
+    h1 {
+        line-height: 0;
+    }
+    main {
+        margin-bottom: 240px;
+    }
+    .main-msg-flex,
+    .wrapper-news,
+    .section-catalog {
+        padding: 0 6%;
+    }
+    .nav-main{
+        display: none;        
+    }
+    .wrapper-news {
+        width: unset;
+    }
+
+    .item-img {
+        margin: 0 auto;
+        width: 94%;
+    }
+    .main-msg-flex img{
+        width: 100%;
+    }
+    .main-msg-right br {
+        display: none;
+    }
+    .section-title {
+        margin-bottom: 24px;
+    }    
+    .big-text span {
+        padding: 20px 20px 20px 43px;
+        background: #FFFFFF;
+    }    
+    .main-msg-flex{
+        flex-direction: column-reverse;
+        margin-bottom: 240px;
+    }
+    .main-msg-right {
+        line-height: 35px;
+        font-family: "Noto Sans JP";
+        letter-spacing: 0.42px;
+        color: #3B3B3B;
+        margin: 0 0 24px;
+    }
+    .main-msg-right h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 21px;
+    }
+    .main-msg-right p {
+        text-align: center;
+        white-space: pre-line;
+        font-size: 14px;
+    }
+    .page-footer ul{
+        display: none;
+    }
+    .section-catalog {
+        margin-bottom: 240px;
+    }
+    .section-catalog p {
+        font-size: 14px;
+    }    
+    .button-download {
+        font-size: 14px;
+        width: unset;
+        margin-bottom: 0;
+        padding: 19px 0px;
+    }
+    p.button-download {
+        font-size: 17px;
+    }
+    .button-pc {
+        line-height: unset;
+        padding: 12px 60px;
+
+    }
+    .catalog-desc {
+        margin-bottom: 24px;
+    }
+
+
+
+
+
+
+
+
+
+    
     header {
         z-index: 3;
         margin: 0;
     }
+    header img {
+        display: none;
+    }
+    h1:after {
+        content: '';
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        background-image: url("../images/logo_footer.png");
+        background-size: contain;
+        vertical-align: middle;
+      }
     nav {
         width: 0;
         height: 0;
         visibility: collapse;
-    }
-    .page-header {
-        flex-direction: column;
-        background-color: #918F89;
-        align-items: center;
-    }
+    }    
     .page-header h1 a{
         color: #FFFFFF;
         margin: 0;
@@ -268,53 +378,29 @@ small {
     .nav-main a:hover {
         border-bottom: none;
     }
-    .main-msg-flex{
-        flex-direction: column-reverse;
-        margin-bottom: 50px;
-    }
-    .main-msg-right {
-        font-size: 14px;
-        line-height: 35px;
-        font-family: "Noto Sans JP";
-        letter-spacing: 0.42px;
-        color: #3B3B3B;
-        margin-bottom: 50px;
-    }
-    .main-msg-right h3 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-    .main-msg-right p {        
-        text-align: center;
-        white-space: pre-line;
-    }
     .big-text {
         font-weight: normal;
         font-size: 39px;
         line-height: 260%;
         font-family: "Noto Sans";
         color: #918F89;
-        top: 70px;
+        top: 2px;
         padding: 0;
         background-color: unset;
         opacity: 0.8;
         letter-spacing: 1.95px;
         white-space: pre-line;
-        width: 100%;
-    }
-    .big-text span {
-        padding: 15px;
-        background: #FFFFFF;
     }
     .items-flex {
         flex-direction: column;
+        margin-bottom: 0;
     }
     .item {
         margin-bottom: 30px;
         width: unset;
     }
     .view-more {
-        margin-bottom: 140px;
+        margin-bottom: 0;
     }
     input[type="text"],
     input[type="email"],
@@ -333,5 +419,12 @@ small {
     }
     footer p {
         padding: 0;
+    }
+    .page-footer {
+        margin: 0;
+        display: block;
+    }
+    .page-footer ul{
+        visibility: collapse;        
     }
 } 
