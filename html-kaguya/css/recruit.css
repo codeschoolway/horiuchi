@@ -28,19 +28,22 @@ table th {
     font-weight: normal;
     background: #DCDBD9;
 }
-table p {
+/* table p {
     line-height: 1;
-    margin-bottom: 8px;
+    margin-bottom: 1px;
+} */
+ul {
+    margin: 0;
+    padding: 0;
 }
 .job ul {
     font-size: 14px;
-    line-height: 23px;
 }
 th {
-    padding: 16px;
+    padding: 8px 16px;
 }
 td {
-    padding: 16px 16px 16px 40px;
+    padding: 8px 16px 8px 40px;
 }
 th,
 td {    
