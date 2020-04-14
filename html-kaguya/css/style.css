@@ -237,13 +237,11 @@ small {
 
 /* ************************************************************************************ */
 
-@media (max-width: 600px) {
-
+@media (max-width: 375px) {
     
     .wrapper {
         width: unset;
     }
-
     .page-header {
         position: fixed;
         top: 0px;
