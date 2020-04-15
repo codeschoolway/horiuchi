@@ -11,10 +11,14 @@
     margin-bottom: 0px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
     .bg-text {
         text-align: center;
         padding: 0;
         top: 150px;
+    }
+    .big-bg {
+        background-image: url(../images/news_top_sp@2x.png);
+        /* background-position: center top; */
     }
 }
