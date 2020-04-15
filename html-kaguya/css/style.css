@@ -255,6 +255,7 @@ small {
         line-height: 0;
     }
     main {
+        padding-top: 54px;
         margin-bottom: 240px;
     }
     .main-msg-flex,
@@ -283,7 +284,7 @@ small {
     }
     .section-title {
         margin-bottom: 48px;
-    }    
+    }
     .big-text span {
         padding: 20px 20px 20px 43px;
         background: #FFFFFF;
@@ -337,17 +338,7 @@ small {
     }
     .catalog-desc {
         margin-bottom: 24px;
-    }
-
-
-
-
-
-
-
-
-
-    
+    }    
     header {
         z-index: 3;
         margin: 0;
