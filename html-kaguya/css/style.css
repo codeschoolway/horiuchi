@@ -271,10 +271,12 @@ small {
 
     .item-img {
         margin: 0 auto;
-        width: 94%;
+        /* width: 94%; */
+        max-width: 100%;
     }
     .main-msg-flex img{
-        width: 100%;
+        /* width: 100%; */
+        max-width: 100%;
     }
     .main-msg-right br {
         display: none;
