@@ -363,7 +363,8 @@ small {
     nav {
         width: 0;
         height: 0;
-        visibility: collapse;
+        display: none;
+        /* visibility: collapse; */
     }    
     .page-header h1 a{
         color: #FFFFFF;
@@ -422,6 +423,7 @@ small {
         display: block;
     }
     .page-footer ul{
-        visibility: collapse;        
+        display: none;
+        /* visibility: collapse; */
     }
 } 
