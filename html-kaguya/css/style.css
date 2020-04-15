@@ -282,7 +282,7 @@ small {
         display: none;
     }
     .section-title {
-        margin-bottom: 24px;
+        margin-bottom: 48px;
     }    
     .big-text span {
         padding: 20px 20px 20px 43px;
@@ -311,6 +311,9 @@ small {
     }
     .page-footer ul{
         display: none;
+    }
+    .section-item {
+    padding: 0 6%;
     }
     .section-catalog {
         margin-bottom: 240px;
