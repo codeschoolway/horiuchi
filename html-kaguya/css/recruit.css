@@ -65,7 +65,7 @@ tr:last-child th
     border-bottom: 0;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 375px) {
     .big-bg {
         background-image: url(../images/recruit_top_sp@2x.png);
     }
