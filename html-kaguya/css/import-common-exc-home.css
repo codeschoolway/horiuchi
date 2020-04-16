@@ -4,13 +4,33 @@
     color: #B2B2B2;
 }
 .big-text {
-    top: 29%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
-    color: #3B3B3B;
+    top: 320px;
+    left: 25%;
+    font-size: 35px;
+    color: #918F89;
     background-color: unset;
+    padding: 0;
+    line-height: 1;
 }
 .big-bg {
     margin-bottom: 161px;
+    position: relative;
+    background-size: 1280px 456px;
+    height: 456px;
+}
+
+@media (max-width: 375px) {
+    .big-text {
+        top: 39%;
+        left: 50%;
+        font-size: 25px;
+        color: #3B3B3B;
+        transform: translate(-50%, -50%);
+    }
+    .big-bg {
+        background-size: 375px;
+        height: 697px;
+        background-position: top right;
+
+    }
 }
