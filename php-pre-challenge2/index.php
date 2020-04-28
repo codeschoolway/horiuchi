@@ -20,3 +20,15 @@ print_r('<pre>');
 print_r($array);
 print_r('</pre>');
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 練習課題2</title>
+</head>
+<body>
+    <a href="index.php?array=3,2,1,4,15,18,13,99,77,66,1,100,0">リクエスト</a>
+</body>
+</html>
