@@ -1,9 +1,6 @@
 @charset "UTF-8";
 @import url("import-common-exc-home.css");
 
-.nav-main li:nth-of-type(3) a{
-    color: #3B3B3B;
-}
 .big-bg {
     background-image: url(../images/recruit_top@2x.png);
 }
@@ -25,10 +22,6 @@ table th {
     font-weight: normal;
     background: #DCDBD9;
 }
-/* table p {
-    line-height: 1;
-    margin-bottom: 1px;
-} */
 ul {
     margin: 0;
     padding: 0;
@@ -65,12 +58,12 @@ tr:last-child th
     border-bottom: 0;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .big-bg {
         background-image: url(../images/recruit_top_sp@2x.png);
     }
     table {
-        width: 100%;
+        width: unset;
     }
     table p {
         font-size: 15px;
