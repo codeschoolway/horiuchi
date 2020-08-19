@@ -31,3 +31,6 @@ $('.item').on({
     $(this).find('p').stop(true, true).slideUp();
   }
 })
+
+// ページ遷移したときのアニメーション
+$('main').hide().fadeIn(1000);
