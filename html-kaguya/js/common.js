@@ -21,3 +21,13 @@ if (element !== null) {
     document.getElementById('button-value').value = "TRANSMISSION COMPLETED";
   };
 }
+
+// 画像にホーバーした時の下からのアニメーション
+$('.item').on({
+  'mouseenter': function(){
+    $(this).find('p').stop(true, true).slideDown();
+  },
+  'mouseleave': function(){
+    $(this).find('p').stop(true, true).slideUp();
+  }
+})
