@@ -1,6 +1,9 @@
 @charset "UTF-8";
 @import url("import-common-exc-home.css");
 
+.nav-main li:nth-of-type(2) a{
+    color: #3B3B3B;
+}
 .big-text {
     position: absolute;
 }
@@ -11,7 +14,10 @@
     margin-bottom: 0px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
+    .nav-main li:nth-of-type(2) a{
+        color: #B2B2B2;
+    }
     .big-bg {
         background-image: url(../images/news_top_sp@2x.png);
     }

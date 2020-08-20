@@ -1,6 +1,8 @@
 // ここからハンバーガーメニュー
 $(function(){
   $('.btn-trigger').on('click', function() {
+    // スマホ画面への遷移中にハンバーガーメニューを表示させない
+    $(".menu").css("transition", 'all .2s linear');
     $(this).toggleClass('active');
     return false;
   });
