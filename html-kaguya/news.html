@@ -8,24 +8,29 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link href="css/ress.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/mobile.css" rel="stylesheet"> -->
     <link href="css/news.css" rel="stylesheet">
+    <link href="css/mob-menu-1.css" rel="stylesheet">
 </head>
-
-<!-- コンテンツを全画面にしない場合は wrapper（class="page-header、class="big-bg、class="section-item）を消す -->
 <body>
     <header class="page-header wrapper">
         <h1>
             <a href="index.html"><img src="images/logo_header.png" alt="logo_header"></a>
         </h1>
-        <nav>
-            <ul class="nav-main">
+        <div class="menu-btn">
+              <div class="btn-trigger menu-btn" id="btn01">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+        </div>
+        <nav class="menu">
+            <ul class="nav-main menu">
                 <li><a href="index.html">HOME</a></li>
-                <li class="current-page"><a href="news.html">NEWS</a></li>
+                <li><a href="news.html">NEWS</a></li>
                 <li><a href="recruit.html">RECURUIT</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
-        </nav>
+        </nav> 
     </header>
 
     <main>
@@ -64,5 +69,7 @@
         </div>
         <small>&copy; HTMLCSS.code</small>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
 </body>
 </html> 

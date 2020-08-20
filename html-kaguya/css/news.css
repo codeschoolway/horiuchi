@@ -4,10 +4,7 @@
 .nav-main li:nth-of-type(2) a{
     color: #3B3B3B;
 }
-.big-text {/* 
-    top: 330px;
-    left: 20%;
-    color: #918F89; */
+.big-text {
     position: absolute;
 }
 .big-bg {
@@ -17,9 +14,11 @@
     margin-bottom: 0px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
+    .nav-main li:nth-of-type(2) a{
+        color: #B2B2B2;
+    }
     .big-bg {
         background-image: url(../images/news_top_sp@2x.png);
-        /* background-position: center top; */
     }
 }
